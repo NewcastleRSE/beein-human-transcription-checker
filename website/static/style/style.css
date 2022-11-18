@@ -1,13 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 
 :root {
     --bg-color: #FFFDEB;
     --header-color: #46495D;
     --main-text-color: #06070E;
+    --btn-hover-color: #e0ca00;
+
+    --error-bg-color: #f3652d;
+    --error-bg-color-hover: #f0c7b7;
 
     --header-font: 'Comfortaa', sans-serif;
     --sub-header-font: 'Poppins', sans-serif;
     --main-font: 'Montserrat', sans-serif;
+
+    --transcription-font: 'Roboto Mono', monospace;
+    --display-font: 'Lora', serif;
 }
 
 body {
@@ -59,17 +66,41 @@ body {
     font-family: var(--main-font);
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    gap: 2em;
+    align-items: center;
 }
 
 .columns {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 2em;
 }
 
 .column-3 {
     flex-basis: 30%;
+}
+
+.column-2 {
+    flex-basis: 45%;
+}
+
+.btn-link {
+    all: unset;
+}
+
+.btn {
+    all: unset;
+    cursor: pointer;
+    padding: 0.5em 1em;
+    border: 0.1em solid black;
+    border-radius: 20px;
+    text-align: center;
+    transition: background-color 0.5s ease;
+}
+
+.btn:hover {
+    background-color: var(--btn-hover-color);
 }
 
 /* transcription raw styling */
@@ -85,11 +116,79 @@ body {
 
 /* error list styling */
 .parser-result {
-    text-align: center;
+    font-family: var(--main-font);
+    flex-basis: 30%;
+    height: fit-content;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+.error-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.error-item {
+    font-weight: 500;
+    cursor: pointer;
+    border: 1px solid black;
+    padding: 0.5em 1em;
+    border-radius: 10px;
+    background-color: var(--error-bg-color);
+    transition: background-color 0.5s ease;
+}
+
+.error-item:hover {
+    background-color: var(--error-bg-color-hover);
+}
+
+.selected {
+    background-color: var(--error-bg-color-hover);
 }
 
 .error-mark.active {
     background-color: red;
+}
+
+.alert {
+    text-align: center;
+    padding: 2em;
+    background-color: var(--error-bg-color-hover);
+    border: 1px solid black;
+    font-weight: 400;
+}
+
+.text {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    flex-grow: 1;
+}
+
+.transcription {
+    font-family: var(--transcription-font);
+    font-weight: 500;
+    line-height: 1.7em;
+}
+
+.converted-text {
+    font-family: var(--display-font);
+    line-height: 1.7em;
+    font-weight: 500;
+}
+
+.toolbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1em;
+    height:fit-content;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
 }
 
 /* display text styling */
