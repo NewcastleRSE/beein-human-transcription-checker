@@ -2,20 +2,23 @@
 
 {% block content %}
     <div class="columns">
-        <div class="text column-3" style="white-space: pre-wrap;">
-            <p contenteditable="True" id="text">{{ text | safe}}</p>
-            <form action="/file-parser" method="POST" class="hidden-form">
+        <div class="text column-2" style="white-space: pre-wrap;">
+            <div class="toolbar">
+                <input type="submit" form="update-form" value="Update" onclick="transferEditedText()" class="update btn">
+                <a href="/save-file" class="btn-link"><button class="btn">Save File</button></a>
+                <a href="/logout" class="btn-link"><button class="btn">Upload New File</button></a>
+            </div>
+            <p contenteditable="True" id="text" class="transcription">{{ text | safe}}</p>
+            <form action="/file-parser" id="update-form" method="POST" class="hidden-form">
                 <textarea name="text" id="text-form" cols="30" rows="10" style="display: none;"></textarea>
-                <input type="submit" value="Update" onclick="transferEditedText()" class="update btn">
             </form>
-            <a href="/save-file"><button>Save File</button></a>
-            <a href="/logout"><button>Upload New File</button></a>
         </div>
-        <div class="parser-result column-3">
-            {%if errors_exist == true %}
-                <ul>
+        {%if errors_exist == true %}
+            <div class="parser-result column-2">
+                <h3 class="column-title section-header">Errors:</h3>
+                <ul class="error-list">
                 {% for error in error_list %}
-                    <li id = "{{loop.index0}}" onclick="highlightErrorToggle(this.id)">
+                    <li id = "Error-{{loop.index0}}" onclick="highlightErrorToggle(this.id)" class="error-item">
                     {% if error[1] == 0 %}
                         Error: expected '{{error[2]}}' got '{{error[3]}}' instead. Position: {{error[0]}}
                     {% elif error[1] == 1 %}
@@ -26,16 +29,12 @@
                     </li>
                 {% endfor %}
                 </ul>
-            {% else %}
-                <p>No Errors, all good!</p>
-            {% endif %}
+            </div>
+        {% endif %}
+        {%- if converted_text != false -%}
+        <div class="converted-text column-2">
+            {{converted_text | safe}}
         </div>
-        <div class="converted-text column-3">
-            {%- if converted_text != false -%}
-                {{converted_text | safe}}
-            {%- else -%}
-                <p class="alert">Some errors exist: correct them to see the display text</p>
-            {%- endif -%}
-        </div>
+        {%- endif -%}
     </div>
 {% endblock %}

@@ -111,7 +111,7 @@ A. Crosley./*
 
 ===
 
-#*The contents of this Booke/*/#
+#*The contents of this Booke/*
 
 ##M/##Y Booke of Bees I divide into 10 Chapters.  
 1 The first, of the nature and properties of Bees, & of their Queene 
@@ -275,14 +275,14 @@ A. Crosley./*
 51 SAGIT. CAPRIC. AQUAR. *are/* 3. *dead months./* 
 52 *How the Bees spend their time in them./*
 53. *The first sharp weather in Capr. shut the Bees in./*
-54 *And in pleasant weather let them loose, if it may be, once in a fortnight or /*3. weekes.
+54 *And in pleasant weather let them loose, if it may be, once in a fortnight or /*3. weekes./*
 55. PISCES.
 56 *The I. faire day in Pisces set your Bees at liberty./*
 57 *Now cleanse the stooles./*
 58 *And drive light stalls/*
 59 ARIES: *The second chiefe robbin-g time/*
-60 *In/* TAUR: *remove the porches./*
-61 *In/* GEMINI *the barres./*
+60 *In* TAUR: *remove the porches./*
+61 *In* GEMINI *the barres./*
 
 ##The contents of the fourth Chapter./##
 
@@ -562,7 +562,7 @@ A. Crosley./*
 16 *The fittest time of the day for it, is the evening./*
 17 *The second feeding-time./*
 18 *The third time of feeding, if it need be./*
-19 *A generall caveat./*
+19 *A generall caveat.*/
 
 ===
 
@@ -790,7 +790,7 @@ ling the rancke favour of the poison cast out with the sting wil come about you 
 ##*Of the nature and properties of Bees/*/##
 
 and swelling to bee both greater and longer. 
-\31 *How to prevent the paine and swelling/*/ Therefore when you are stung, instantlie wipe of the Bee, sting and all, & wash the place with your spittle: so shal you prevent both paine & swelling, which otherwise nothing but time can cure: for the posion is so subtill that it quicklie pierceth the flesh, \32 *Nothing but time can cure their stinging/*/ and the wound so little that no antidote can followe after: and yet I have heard commended for a remedie the joice of houseleeke, of rue, of malows, of ivie, of a marigold leafe, of holyhock and vinegar, of sault & vineger, and divers other things. 
+\31 *How to prevent the paine and swelling/*/ Therefore when you are stung, instantlie wipe of the Bee, sting and all, & wash the place with your spittle: so shal you prevent both paine & swelling, which otherwise nothing but time can cure: for the posion is so subtill that it quicklie pierceth the flesh, \32 *Nothing but time can cure their stinging*/ and the wound so little that no antidote can followe after: and yet I have heard commended for a remedie the joice of houseleeke, of rue, of malows, of ivie, of a marigold leafe, of holyhock and vinegar, of sault & vineger, and divers other things. 
 
 \33 *what things the Bee-master must avoid/*/ But if thou wilt have favour of thy Bees that they sting thee not, thou must avoid such things as offend them: thou must not be (1) unchast or (2) uncleanly: for impurity & sluttishness (themselves being most chast and neate,) they utterly abhorre: thou must not come among them (3) smelling of sweat, or having a stinking breath caused either through eating of leekes, onions, garleeke, and the like; or by any other meanes: the noisomnes whereof is corrected with a cup of beere, and therefore it is not good to come among them before you have drunk thou must not be given to (4) surfeting & drunkennes: thou must not come (5) puffing & blowing or sweating unto them, nether hastily stirre among them, nor violently defend thy 
 
@@ -804,7 +804,7 @@ to kill one, the Bees presently perceiving it by the strong smel of the humour (
 
 selfe when they seeme to threaten thee; but softlye moving thy hand, before thy face gently put them by, and lastlie thou must be (6) no stranger unto them. \34 *The six properties of a Bee-master/*/ \Notwearing any offensive apparell, *v.n./*27/ In a word thou must bee chast, cleanlie, sweet, sober, quiet, and familiar: so wil they love thee, and know thee from all other. 
 \35. *Safer to walke then stand among Bees/*/ At any time, when nothing hath angered them one may boldly walke along by your Bees: but if he stand still before them within the space of a pearch in the heate of the day, it is marvaile but one or other spying him from the hive wil have a cast at him. 
-\36 *The fittest time to stirre about Bees is in the morning/*/ If you have any thing to doe about your hives, the fittest time is in the morning, before the sun be hot, or otherwise in cold, wet, or windie wether, for then they will not sting, unlesse they be much provoked. They are also very gentle in the evenings; but then being wearie if you stand in their way you trouble their lighting, and cause them to fall, & if you make them come forth when they are housed for al night, they can hardly see to get in againe. *v./* \*v.n./*41/ 
+\36 *The fittest time to stirre about Bees is in the morning/*/ If you have any thing to doe about your hives, the fittest time is in the morning, before the sun be hot, or otherwise in cold, wet, or windie wether, for then they will not sting, unlesse they be much provoked. They are also very gentle in the evenings; but then being wearie if you stand in their way you trouble their lighting, and cause them to fall, & if you make them come forth when they are housed for al night, they can hardly see to get in againe. *v.* \*v.n./*41/ 
 \37 *In the heat of the day they are most angry/*/ But about noone in hot weather, and specially when they have tasted of the honidewes, [cw: they]
 
 === 
@@ -820,7 +820,7 @@ they are soone angrie, and very eager. \38 *How to bee armed when the Bees are a
 ##*and of their Queene./*/##
 
 *animum, artem quis facile crediderit./* \41 *their sight dim./*/ Of all the senses their sight seemeth to be weakest: and weaker when they come home loaded, then when they are leere, and being loaded weaker on foot then when they are flying. If when they come home loaded, they light beside the dore, they will goe up and downe seeking for it, as if they were in the darke: & unlesse by chance they hit upon it, they must fly againe before they can finde it. As many as fall beside the stoole when it waxeth darke, ten to one they ly abroad all night: yea if at such time being troubled by any thing they come forth from the stoole, though then they be fresh and lusty they wil leape up and downe, runne and fly to and fro til they be wearie; but by no meanes can they finde the way in againe. And therefore is it that when they fly abroad, they take such paines at the doore in rubbing and wiping their glazen eies, that they may the better discerne their way forth and back. 
-\42 *The smelling very quick./*/ But their smelling is excellent, whereby, when they fly aloft in the aier, they wil quickly perceave any thing under them that they like, as hony or tarre, though it be covered: as soone as the honi-dew is falen, they presently winde it, though the Okes that receive it *v./* \*V.c.6.n/*.38/ be a far of which the Poet, speaking of the excellencie of some creatures in this sense before others, doth thus expresse [cw:idc] [B]
+\42 *The smelling very quick./*/ But their smelling is excellent, whereby, when they fly aloft in the aier, they wil quickly perceave any thing under them that they like, as hony or tarre, though it be covered: as soone as the honi-dew is falen, they presently winde it, though the Okes that receive it *v.* \*V.c.6.n*.38/ be a far of which the Poet, speaking of the excellencie of some creatures in this sense before others, doth thus expresse [cw:idc] [B]
 
 ===
 
