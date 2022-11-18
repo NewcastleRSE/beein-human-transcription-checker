@@ -1,6 +1,7 @@
 from flask import Blueprint, render_template, request, session, redirect, url_for, jsonify, send_from_directory, flash, current_app
 from werkzeug.utils import secure_filename
 from .utilities.file_operations import allowed_file
+from .utilities.file_operations import save_file
 from .utilities.text_manipulation import remove_tags
 from .utilities.text_manipulation import remove_empty_tags
 import os
@@ -50,6 +51,7 @@ def file_parser():
             # if it's the result of the update button
             text = request.form["text"]
             text = remove_tags(text)
+            save_file(views.root_path, text)
 
         # parse the text
         valid_tags, tokenized_text, error_list, errors = parser(text)
@@ -67,6 +69,12 @@ def file_parser():
             converted_text = False
             text = "".join(mark_errors_for_display(error_list, tokenized_text))
         return render_template('file-parser.html', text = text, errors_exist = errors, error_list = error_list, converted_text = converted_text)
+
+@views.route('/save-file', methods=['GET', 'POST'])
+def download_saved_file():
+    temp_path = "tmp" 
+    filename = "modified_transcription.txt"
+    return send_from_directory(temp_path, filename, as_attachment=True)
 
 @views.route('/test', methods=['GET', 'POST'])
 def test():
