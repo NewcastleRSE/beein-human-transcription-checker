@@ -67,6 +67,15 @@ def parser_single_open_close(token, i, error_list, parser_queue, valid_tags, sin
 #                 valid_tags.append([i,0])
 #     return error_list, parser_queue, valid_tags
 
+def find_closing(mark, single_marks_opening, single_marks_closing):
+    return_mark = ""
+    for i, mark_item in enumerate(single_marks_closing):
+        if mark == mark_item:
+            return_mark = single_marks_opening[i]
+            break
+    return return_mark
+
+
 def parser(text):
     single_marks_opening = ['[cw:', '{', '[', '*', '###', '##', '#', '\\']
     single_marks_closing = [']', '}', ']', '/*', '/###', '/##', '/#', '/']
@@ -83,7 +92,8 @@ def parser(text):
     if parser_queue != []:
         for orphan in parser_queue:
             # error_list = [position, type, orphan]
-            error_list.append([orphan[0], 1, orphan[1]])
+            opening = find_closing(orphan[1], single_marks_opening, single_marks_closing)
+            error_list.append([orphan[0], 1, opening])
     if error_list != []:
         # print("\n ====== Errors ====== \n")
         # order list by position

@@ -17,6 +17,7 @@ def find_position_for_display(errors, tokenized_text):
                     break
             mark_positions.append([error[0], error[0] + last_position, str(error_id)])
     mark_positions = consolidate_positions(mark_positions)
+    mark_positions = extend_single_token_marks(mark_positions)
     return mark_positions
 
 def consolidate_positions(mark_positions):
@@ -30,7 +31,12 @@ def consolidate_positions(mark_positions):
         else:
             consolidated.append(position)
     return consolidated
-    
+
+def extend_single_token_marks(mark_positions):
+    for i, position in enumerate(mark_positions):
+        if position[0] == position[1]:
+            mark_positions[i][1] = position[1] + 1
+    return mark_positions
 
 def mark_errors_for_display(errors, tokenized_text):
     mark_positions = find_position_for_display(errors, tokenized_text)
