@@ -17,3 +17,29 @@ function transferEditedText() {
     const text = document.getElementById('text').textContent
     document.getElementById('text-form').textContent = text
 }
+
+function hideTranscription() {
+    const transcription = document.getElementById('text');
+    const hideBtn = document.getElementById('hideTransc')
+
+    if (transcription.style.display == 'none') {
+        transcription.style.display = 'block';
+        hideBtn.innerHTML  = 'Hide Transcription';
+    } else {
+        transcription.style.display = 'none';
+        hideBtn.innerHTML = 'Show Transcription';
+    };
+}
+
+function toggleHideTranscriptionButton() {
+    const transcription = document.getElementById('converted-text');
+    const hideBtn = document.getElementById('hideTransc')
+
+    if (typeof(transcription) != 'undefined' && transcription != null) {
+        hideBtn.style.display = 'block';
+    }
+}
+
+window.onload = function() {
+    toggleHideTranscriptionButton();
+}

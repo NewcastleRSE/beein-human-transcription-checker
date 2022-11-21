@@ -7,6 +7,7 @@
                 <input type="submit" form="update-form" value="Update" onclick="transferEditedText()" class="update btn">
                 <a href="/save-file" class="btn-link"><button class="btn">Save File</button></a>
                 <a href="/logout" class="btn-link"><button class="btn">Upload New File</button></a>
+                <button class="btn" onclick="hideTranscription()" id="hideTransc" style="display: none;">Hide Transcription</button>
             </div>
             <p contenteditable="True" id="text" class="transcription">{{ text | safe}}</p>
             <form action="/file-parser" id="update-form" method="POST" class="hidden-form">
@@ -32,7 +33,7 @@
             </div>
         {% endif %}
         {%- if converted_text != false -%}
-        <div class="converted-text column-2">
+        <div class="converted-text column-2" id="converted-text">
             {{converted_text | safe}}
         </div>
         {%- endif -%}
