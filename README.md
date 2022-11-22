@@ -41,3 +41,11 @@ python -m main
 ### Running Tests
 
 No unit tests have been created for this auxiliary app. To test the app, run it locally and use the files in `test-data` to explore it.
+
+## Deployment
+
+### Production
+Deploying to [Python Anywhere](https://www.pythonanywhere.com/), manually through the web interface.
+
+## Usage
+App deployed at [https://bhtranscriptionchecker.pythonanywhere.com/](https://bhtranscriptionchecker.pythonanywhere.com/)
