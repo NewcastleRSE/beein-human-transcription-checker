@@ -14,7 +14,9 @@ def replace_tags(valid_tags, tokenized_text):
         '[': '<p class="sig">',
         ']': '</p>',
         '\\': '<span class="side-note">',
-        '/': '</span>'
+        '/': '</span>',
+        '$': '<h4>',
+        '/$': '</h4>'
     }
     for tag in valid_tags:
         tokenized_text[tag[0]] = tag_to_html[tokenized_text[tag[0]]]
