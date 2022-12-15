@@ -1,5 +1,5 @@
 def tokenizer_split(split_text):
-    marks = ['[cw:', '[', '{', ']', '}', '/$', '$', '/*', '*', '/###', '###', '/##','##', '/#', '#', '~~~', '\\', '/', '===', '\r\n']
+    marks = ['[cw:', '[', '{', ']', '}', '/$', '$', '/*', '*', '/!!', '!!', '/###', '###', '/##','##', '/#', '#', '~~~', '\\', '/', '===', '\r\n']
     text_tokenised = []
     for token in split_text:
         new_token = token
@@ -77,8 +77,8 @@ def find_closing(mark, single_marks_opening, single_marks_closing):
 
 
 def parser(text):
-    single_marks_opening = ['[cw:', '{', '[', '$', '*', '###', '##', '#', '\\']
-    single_marks_closing = [']', '}', ']', '/$', '/*', '/###', '/##', '/#', '/']
+    single_marks_opening = ['[cw:', '{', '[', '$', '*', '!!', '###', '##', '#', '\\']
+    single_marks_closing = [']', '}', ']', '/$', '/*', '/!!', '/###', '/##', '/#', '/']
     parser_queue = []
     error_list = []
     valid_tags = []

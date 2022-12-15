@@ -1,5 +1,5 @@
 def find_position_for_display(errors, tokenized_text):
-    markup = ['[', '{', ']', '}', '/$', '$' '/*', '*', '/###', '###', '/##','##', '/#', '#', '~~~']
+    markup = ['[', '{', ']', '}', '/$', '$' '/*', '*', '/!!', '!!',  '/###', '###', '/##','##', '/#', '#', '~~~']
     mark_positions = []
     for error_id, error in enumerate(errors):
         # closes with the wrong tag, or closing tag never opened
