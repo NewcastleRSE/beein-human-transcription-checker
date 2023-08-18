@@ -6,6 +6,8 @@ def replace_tags(valid_tags, tokenized_text):
         '/##': '</h2>',
         '###': '<h3>',
         '/###': '</h3>',
+        '####': '<h4>',
+        '/####': '</h4>',
         '*': '<em>',
         '/*': '</em>',
         '{': '<span class="drop-capital">',
@@ -28,6 +30,7 @@ def replace_tags(valid_tags, tokenized_text):
 def add_outer_tags(converted_text):
     outer_tags = {
         '\r\n': '</p><p>',
+        '\n': '</p><p>',
         '===': '<br/>',
         '~~~': '<br/>[Ornament]<br/>'
     }
