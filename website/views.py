@@ -58,13 +58,16 @@ def file_parser():
 
         if errors == False:
             # changes internal tags
-            tokenized_text = replace_tags(valid_tags, tokenized_text)
+            tokenized_text, tei_tokenized = replace_tags(valid_tags, tokenized_text)
             # adds paragraphs
-            tokenized_text = add_outer_tags(tokenized_text)
+            tokenized_text, tei_tokenized = add_outer_tags(tokenized_text, tei_tokenized)
             # joins tokens for display
             converted_text = "".join(tokenized_text[:])
+            converted_text_tei = "".join(tei_tokenized[:])
             # Cleans empty p tags
             converted_text = remove_empty_tags(converted_text)
+            converted_text_tei = remove_empty_tags(converted_text_tei)
+            save_file(views.root_path, converted_text_tei, 'tei_text.txt')
         else:
             converted_text = False
             text = "".join(mark_errors_for_display(error_list, tokenized_text))

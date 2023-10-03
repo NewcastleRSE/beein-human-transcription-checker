@@ -8,5 +8,5 @@ def remove_tags(text):
 
 def remove_empty_tags(text):
     cleantext = re.sub(CLEAN_EMPTY, '', text)
-    print(cleantext)
+    # print(cleantext)
     return cleantext

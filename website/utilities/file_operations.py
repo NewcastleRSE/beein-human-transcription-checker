@@ -1,10 +1,9 @@
 def allowed_file(filename, ALLOWED_EXTENSIONS):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
-def save_file(rootdir, text):
+def save_file(rootdir, text, filename="modiefied_transcription.txt"):
     import os
 
-    filename = "modified_transcription.txt"
     TMP_PATH = rootdir
     TMP_FOLDER = "tmp"
     path = os.path.join(TMP_PATH, TMP_FOLDER, filename)
